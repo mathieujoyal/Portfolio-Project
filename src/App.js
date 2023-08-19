@@ -1,15 +1,25 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import Header from "./Header";
+import Homepage from "./Homepage";
+import Aboutme from "./AboutMe";
+import Project from "./Projects";
+import Contactpage from "./Contactpage"
 
-function App() {
+
+const App = () =>{
   return (
-    <div>
-      <h1>My Portfolio Project</h1>
-      <section>
-        <h2>About Me</h2>
-        <p>I'm a big nerd</p>
-      </section>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+        <Route />
+        <Route />
+        <Route />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
