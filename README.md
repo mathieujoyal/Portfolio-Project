@@ -1,5 +1,5 @@
 # Mathieu's BIG BRAIN moves and thought processes
-The story of this masterpiece came to be.
+The story of how this masterpiece came to be.
 
 ## In the beggining, there was nothing. Then, Greatness manifested.
 
