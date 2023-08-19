@@ -4,7 +4,7 @@ import GlobalStyles from "./GlobalStyle"
 
 const Header = () => {
     return(
-        <HeaderStyled>
+        <HeaderStyled className="titlebanner">
             <GlobalStyles />
             <H1  className="SlidingTitle">Mathieu Joyal's Portfolio</H1>
             <NavigationButtons>
@@ -20,27 +20,49 @@ const Header = () => {
 const HeaderStyled = styled.div`
 text-align: center;
 color:White;
-background-color: rgb(0,200,200);
+background-color: rgb(0,150,200);
 padding-top: 1px;
+
+&.titlebanner{
+    animation-name: titlebanner;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+@keyframes titlebanner{
+0%{
+    background-color: rgb(0,0,0)
+}
+40%{
+    background-color: rgb(0,0,0)
+}
+100%{
+    background-color: rgb(0,150,200)
+}
+}
+}
 `
 
 const H1 = styled.h1`
 font-style: italic;
-background-color: rgb(0,0,250);
-width: 70%;
+padding: 10px 0px;
 text-align: center;
+background-color:rgb(0,0,250);
+width: 70%;
 margin-left: 15%;
 margin-right: 15%;
 border-radius: 10px;
 &.SlidingTitle{
     animation-name: slide-in;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 @keyframes slide-in{
-    from{padding-left:100px;
-    opacity: 0;
+    0%{
+        padding-left:300px;
+        opacity: 0;
     }
-    to{
+    50%{
+        padding-left: 0px;
+    }
+    100%{
         padding-left: 0px;
     }
 }
@@ -48,8 +70,7 @@ border-radius: 10px;
 `
 
 const NavigationButtons = styled.div`
-
-background-color: rgb(1,1,255);
+background-color: rgb(0,0,255);
 padding: 10px 20px;
 margin-top: 10px;
 text-decoration: none;
