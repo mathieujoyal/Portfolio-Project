@@ -3,22 +3,6 @@ import styled from "styled-components"
 
 const Contactpage = () => {
 
-    const [fullName, setFullName] = useState("");
-    const [companyName, setCompanyName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        const contactInfo = {
-            fullName,
-            companyName,
-            email,
-            phoneNumber
-        }
-    }
-
     return(
         <Wholepage>
             <H1>Here's how you can reach me!</H1>
@@ -26,7 +10,7 @@ const Contactpage = () => {
             <Para>My email: mathieujoyal96@gmail.com</Para>
             <Para>My phone number: 438-880-0090</Para>
 
-            <Form onSubmit={handleSubmit}>
+            <Form>
             <Label>Fullname: <Input></Input></Label>
             <Label>Company: <Input></Input></Label>
             <Label>Email: <Input></Input></Label>

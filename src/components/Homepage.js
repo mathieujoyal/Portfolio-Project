@@ -1,5 +1,5 @@
 import React from "react";
-import pics from "./Mathieu.png";
+import pics from "../Mathieu.png";
 import styled from "styled-components"
 
 const Homepage = () => {
@@ -36,10 +36,6 @@ const H1 = styled.h1`
 `
 
 const H2 = styled.h2`
-
-`
-
-const Para = styled.p`
 
 `
 
