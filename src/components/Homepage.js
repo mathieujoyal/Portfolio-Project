@@ -6,8 +6,7 @@ const Homepage = () => {
     return (
         <Wholepage>
             <Halfcolor></Halfcolor>
-            {// eslint-disable-next-line
-                    }<Picture src={pics} alt="The only good picture of me"/>
+            <Picture src={pics} alt="The only good picture of me"/>
             <H1>Mathieu Joyal, <Span>Junior front-end Developper</Span></H1>
             <H2>Welcome to my Portfolio showcase!</H2>
         </Wholepage>
