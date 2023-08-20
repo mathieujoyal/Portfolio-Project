@@ -22,7 +22,6 @@ text-align: center;
 color:White;
 background-color: rgb(0,150,200);
 padding-top: 1px;
-
 &.titlebanner{
     animation-name: titlebanner;
     animation-duration: 2.5s;
