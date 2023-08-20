@@ -3,8 +3,9 @@ import pics from "./Mathieu.png";
 import styled from "styled-components"
 
 const Homepage = () => {
-    return(
+    return (
         <Wholepage>
+            <Halfcolor></Halfcolor>
             {// eslint-disable-next-line
                     }<Picture src={pics} alt="The only good picture of me"/>
             <H1>Mathieu Joyal, <Span>Junior front-end Developper</Span></H1>
@@ -15,6 +16,12 @@ const Homepage = () => {
 
 const Wholepage = styled.div`
 
+`
+
+const Halfcolor = styled.div`
+background-color: green;
+height: 250px;
+margin-bottom: -250px;
 `
 
 const Picture = styled.img`

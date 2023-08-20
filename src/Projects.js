@@ -5,7 +5,7 @@ const Project = ({data}) => {
         <Wholepage>
         <h1>Quick showcase of my projects done so far.</h1>
         <ListOfProjects>
-            {(Object.values(data)).map((project)=>{
+{/*             {(Object.values(data)).map((project)=>{
                 return (
                     <div>
                         <p>{project.projectName}</p>
@@ -13,7 +13,7 @@ const Project = ({data}) => {
                         <p>{project.description}</p>
                     </div>
                 )
-            })}
+            })} */}
         </ListOfProjects>
     </Wholepage>)
 }
