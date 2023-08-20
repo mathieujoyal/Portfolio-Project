@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components"
 
 const Contactpage = () => {
@@ -32,10 +31,6 @@ const H1 = styled.h1`
 `
 
 const Para = styled.p`
-
-`
-
-const Span = styled.span`
 
 `
 

@@ -9,7 +9,7 @@ const Project = ({data}) => {
                 return (
                     <div>
                         <p>{project.projectName}</p>
-                        <img src={project.projectimage}></img>
+                        <img src={project.projectimage} alt="project img"></img>
                         <p>{project.description}</p>
                     </div>
                 )

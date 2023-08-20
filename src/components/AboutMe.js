@@ -33,8 +33,4 @@ const Para = styled.p`
 
 `
 
-const Span = styled.span`
-
-`
-
 export default Aboutme
