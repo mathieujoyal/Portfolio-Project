@@ -1,9 +1,11 @@
 import styled from "styled-components"
+import pics from "./Mathieu.png";
 
 const Project = () => {
     return(
         <Wholepage>
-            <h1>PlaceHolder Project Page</h1>
+            <h1>Quick showcase of my projects done so far.</h1>
+            
         </Wholepage>
     )
 }
