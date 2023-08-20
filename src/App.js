@@ -4,6 +4,7 @@ import Header from "./Header";
 import Homepage from "./Homepage";
 import Aboutme from "./AboutMe";
 import Project from "./Projects";
+import { projects } from "./data"
 import Contactpage from "./Contactpage"
 
 
@@ -14,7 +15,7 @@ const App = () =>{
       <Routes>
         <Route path="/" element={<Homepage />}/>
         <Route path="/AboutMe" element={<Aboutme />}/>
-        <Route path="/Projects" element={<Project />}/>
+        <Route path="/Projects" element={<Project data={projects}/>}/>
         <Route path="/Contactpage" element={<Contactpage />}/>
       </Routes>
     </Router>

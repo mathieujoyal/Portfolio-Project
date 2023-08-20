@@ -1,16 +1,28 @@
 import styled from "styled-components"
-import pics from "./Mathieu.png";
 
-const Project = () => {
-    return(
+const Project = ({data}) => {
+    return (
         <Wholepage>
-            <h1>Quick showcase of my projects done so far.</h1>
-            
-        </Wholepage>
-    )
+        <h1>Quick showcase of my projects done so far.</h1>
+        <ListOfProjects>
+            {(Object.values(data)).map((project)=>{
+                return (
+                    <div>
+                        <p>{project.projectName}</p>
+                        <img src={project.projectimage}></img>
+                        <p>{project.description}</p>
+                    </div>
+                )
+            })}
+        </ListOfProjects>
+    </Wholepage>)
 }
 
 const Wholepage = styled.div`
+
+`
+
+const ListOfProjects = styled.div`
 
 `
 
