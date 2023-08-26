@@ -6,6 +6,7 @@ import Aboutme from "./components/AboutMe";
 import Project from "./components/Projects";
 import { projects } from "./data"
 import Contactpage from "./components/Contactpage"
+import NavigationPage from "./components/NavigationPage"
 
 
 const App = () =>{
@@ -17,6 +18,7 @@ const App = () =>{
         <Route path="/AboutMe" element={<Aboutme />}/>
         <Route path="/Projects" element={<Project data={projects}/>}/>
         <Route path="/Contactpage" element={<Contactpage />}/>
+        <Route path="/NavigationPage" element={<NavigationPage />}/>
       </Routes>
     </Router>
   );

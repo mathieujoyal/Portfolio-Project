@@ -2,16 +2,16 @@ import styled from "styled-components"
 
 const Project = ({data}) => {
     return (
-        <Wholepage>
-        <h1>Quick showcase of my projects done so far.</h1>
+        <Wholepage className="Viewport">
+        <H1>Quick showcase of my projects done so far.</H1>
         <ListOfProjects>
             {(Object.values(data)).map((project)=>{
                 return (
-                    <div>
-                        <p>{project.projectName}</p>
-                        <img src={project.projectimage} alt="project img"></img>
-                        <p>{project.description}</p>
-                    </div>
+                    <Projectdiv key={project.id}>
+                        <Para>{project.projectName}</Para>
+                        <Img src={project.projectimage} alt="project img"></Img>
+                        <Para>{project.description}</Para>
+                    </Projectdiv>
                 )
             })}
         </ListOfProjects>
@@ -19,7 +19,27 @@ const Project = ({data}) => {
 }
 
 const Wholepage = styled.div`
+height: 250vh;
+`
 
+const H1 = styled.h1`
+margin: auto;
+padding-top: 50px ;
+`
+
+const Para = styled.p`
+margin: 10px 5%;
+`
+
+const Projectdiv = styled.div`
+    border: dashed;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 10px black;
+    margin: 50px 20%;
+`
+
+const Img = styled.img`
+width: 50%;
 `
 
 const ListOfProjects = styled.div`
