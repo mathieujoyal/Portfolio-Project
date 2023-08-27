@@ -3,7 +3,7 @@ import projectpic2 from ".//Capture 2.PNG"
 import projectpic3 from ".//Capture 3.PNG"
 import projectpic4 from ".//Capture 4.PNG"
 import projectpic5 from ".//Capture 5.PNG"
-
+import projectpic6 from ".//Capture 6.PNG"
 
 
 export const projects = {
@@ -36,5 +36,11 @@ export const projects = {
         projectName: 'Signup Form',
         projectimage: projectpic5,
         description: `This is the signup page i spent the most time on. It shows any mistake made during signup to the user based on their mistake I.E: if the password doesn't match or is not long enough, if the requierments for any of the fields are not met`
+    },
+    Searchbar:{
+        id: 'search',
+        projectName: 'Search bar',
+        projectimage: projectpic6,
+        description: `This Fully functional Search bar project auto-completes what the user is typing based on a selection of book titles. It puts what has been written in bold and the selection are highlighted when the user hovers over one.`
     },
 };

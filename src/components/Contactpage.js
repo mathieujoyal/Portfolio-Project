@@ -72,6 +72,7 @@ text-align: start;
 const Button = styled.button`
 display: block;
 margin: 10px auto;
+margin-top: 40px;
 cursor: pointer ;
 border-width: 2px;
 border-radius: 3px;

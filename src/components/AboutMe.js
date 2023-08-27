@@ -17,11 +17,20 @@ const Aboutme = () => {
             </Para>
             <div>
                 <ColoredP>Personal goals:
-                <Para></Para>
-                Travel around the world
-
+                    <Ul>
+                        <Section>
+                            Travel to these places:
+                                <Li>Norway</Li>
+                                <Li>Italy</Li>
+                                <Li>Greece</Li>
+                                <Li>Paris</Li>
+                                <Li>Germany</Li>
+                                
+                            </Section>
+                        <Li>Have my own company</Li>
+                        <Li></Li>
+                    </Ul>
                 </ColoredP>
-
             </div>
             <Link className="secretpage" aria-label="Show menu" to="/Jujupage">
                 <Img src={secret} alt="mobileBtn"/>
@@ -37,6 +46,9 @@ const Wholepage = styled.div`
 const ColoredP = styled.div`
 
 `
+const Section = styled.section`
+padding-bottom: 20px;
+`
 
 const Img = styled.img`
 width: 10px;
@@ -49,15 +61,28 @@ top: 0;
 const H1 = styled.h1`
 margin: auto;
 padding-top: 50px;
-
 `
 
 const H2 = styled.h2`
 
 `
 
+const Li = styled.li`
+list-style: none;
+`
+
+const Ul = styled.ul`
+margin: 20px 15%;
+box-shadow: 0px 0px 15px 5px darkgreen;
+border-radius: 10px;
+padding: 20px;
+`
+
 const Para = styled.p`
-margin: 0px 15%;
+margin: 20px 15%;
+box-shadow: 0px 0px 15px 5px darkgreen;
+border-radius: 10px;
+padding: 20px;
 `
 
 export default Aboutme

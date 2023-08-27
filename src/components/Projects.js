@@ -37,7 +37,7 @@ margin: 10px 5%;
 const Projectdiv = styled.div`
     border: dashed;
     border-radius: 50px;
-    box-shadow: 0px 0px 20px 10px darkgreen;
+    box-shadow: 0px 0px 15px 5px darkgreen;
     margin: 50px 20%;
     padding: 10px;
 `
