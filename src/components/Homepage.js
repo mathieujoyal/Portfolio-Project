@@ -8,10 +8,10 @@ const Homepage = () => {
 
     return (
         <Wholepage className="Viewport">
-            <Halfcolor></Halfcolor>
-            <Picture src={pics} alt="The only good picture of me"/>
-            <H1>Mathieu Joyal, <Span>Junior front-end Developper</Span></H1>
-            <H2>Welcome to my Portfolio showcase!</H2>
+            <Halfcolor className="neonboxlightintro"></Halfcolor>
+            <Picture id="cool" className="neonboxlightintro" src={pics} alt="The only good picture of me"/>
+            <H1 className="neonlightintro">Mathieu Joyal, <Span>Junior front-end Developper</Span></H1>
+            <H2 className="neonlightintro">Welcome to my Portfolio showcase!</H2>
         </Wholepage>
     )
 }
@@ -32,7 +32,26 @@ width: 200px;
 border:solid white 5px;
 border-radius: 100px;
 margin: 100px 0px;
-box-shadow: 0px 0px 10px 5px darkgreen;
+box-shadow: 0px 0px 15px 5px darkgreen;
+&#cool{
+animation-name: spin;
+animation-duration: 1.2s;
+animation-iteration-count: 1;
+}
+@keyframes spin{
+33%{
+    transform: scale(150%) rotate(360deg);
+}
+50%{
+    transform: scale(90%) rotate(360deg);
+}
+80%{
+    transform: scale(105%) rotate(360deg);
+}
+100%{
+    transform: scale(100%) rotate(360deg);
+}
+}
 `
 
 const H1 = styled.h1`

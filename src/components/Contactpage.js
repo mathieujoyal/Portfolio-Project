@@ -4,12 +4,12 @@ const Contactpage = () => {
 
     return(
         <Wholepage className="Viewport">
-            <H1>Here's how you can reach me!</H1>
+            <H1 className="neonlightintro">Here's how you can reach me!</H1>
 
             <Para>My email: <Span>mathieujoyal96@gmail.com</Span></Para>
             <Para>My phone number: <Span>438-880-0090</Span></Para>
 
-            <Form>
+            <Form className="neonboxlightintro">
             <Label>Fullname: <Input></Input></Label>
             <Label>Company: <Input></Input></Label>
             <Label>Email: <Input type="email"></Input></Label>
@@ -45,6 +45,7 @@ const Form = styled.form`
     border-radius: 10px;
     padding:5%;
     margin: 0px 15%;
+    box-shadow: 0px 0px 15px 5px darkgreen;
 `
 
 const Label = styled.label`
@@ -54,12 +55,17 @@ font-size: 20px;
 const Input = styled.input`
 display: block;
 margin: 10px auto;
+background: white;
 width: 100%;
 max-width: 350px;
 text-align: start;
 &.commentsection{
     text-align: start;
     padding-bottom: 100px;
+}
+&:focus{
+    border: 5px darkgreen solid;
+    box-shadow: 0px 0px 15px 5px darkgreen;
 }
 `
 
@@ -69,11 +75,12 @@ margin: 10px auto;
 cursor: pointer ;
 border-width: 2px;
 border-radius: 3px;
-border-color: rgb(220, 132, 255);
-background-color: rgb(0, 100, 150);
+border-color: white;
+background-color: rgb(0,50,0);
 color: white;
 font-size: 20px;
 padding: 15px 5% ;
+box-shadow: 0px 0px 15px 5px darkgreen;
 `
 
 export default Contactpage

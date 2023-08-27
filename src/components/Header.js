@@ -7,7 +7,7 @@ const Header = () => {
     return(
         <HeaderStyled className="titlebanner">
             <GlobalStyles />
-            <H1  className="SlidingTitle">Mathieu Joyal's Portfolio</H1>
+            <H1 className="SlidingTitle">Mathieu Joyal's Portfolio</H1>
             <div>
             <NavigationButtons>
                 <LinkToPages className="Navbarbtn" to="/">Homepage</LinkToPages>
@@ -93,10 +93,12 @@ z-index: 10;
 const Navbutton = styled.img`
 width: 36px;
 height: 36px;
+background-color: darkgreen ;
+border: 2px solid black;
 `
 
 const MobileDiv = styled.div`
-background-color: rgb(0,0,155);
+background-color: darkgreen ;
 box-shadow: 0px 0px 15px 5px black;
 @media(min-width:601px){
     .Dropmenu{

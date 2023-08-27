@@ -3,11 +3,11 @@ import styled from "styled-components"
 const Project = ({data}) => {
     return (
         <Wholepage className="Viewport">
-        <H1>Quick showcase of my projects done so far.</H1>
+        <H1 className="neonlightintro">Quick showcase of my projects done so far.</H1>
         <ListOfProjects>
             {(Object.values(data)).map((project)=>{
                 return (
-                    <Projectdiv key={project.id}>
+                    <Projectdiv className="neonboxlightintro" key={project.id}>
                         <Para>{project.projectName}</Para>
                         <Img src={project.projectimage} alt="project img"></Img>
                         <Para>{project.description}</Para>
@@ -22,7 +22,7 @@ const Project = ({data}) => {
 }
 
 const Wholepage = styled.div`
-height: 320vh;
+
 `
 
 const H1 = styled.h1`
@@ -39,6 +39,7 @@ const Projectdiv = styled.div`
     border-radius: 50px;
     box-shadow: 0px 0px 20px 10px darkgreen;
     margin: 50px 20%;
+    padding: 10px;
 `
 
 const Img = styled.img`

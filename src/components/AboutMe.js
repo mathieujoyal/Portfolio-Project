@@ -5,8 +5,8 @@ import {Link} from "react-router-dom"
 const Aboutme = () => {
     return(
         <Wholepage className="Viewport">
-            <H1>Hello!</H1>
-            <H2>Here's small paragraph to tell you a little about me.</H2>
+            <H1 className="neonlightintro">Hello!</H1>
+            <H2 className="neonlightintro">Here's small paragraph to tell you a little about me.</H2>
             <Para>I am a young(ish) web developper living near montreal with a passion for 
             creating things. Whether it be stories, games, website or (on the nerdier side) 
             Dungeon & Dragons universes, i've always found that making something 
@@ -40,7 +40,7 @@ const ColoredP = styled.div`
 
 const Img = styled.img`
 width: 10px;
-opacity: 10%;
+opacity: 50%;
 position: fixed;
 left: 0;
 top: 0;

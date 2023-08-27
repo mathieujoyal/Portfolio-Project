@@ -27,7 +27,8 @@ padding:12%;
 font-size: 40px;
 color: white;
 text-decoration: none;
-border: 10px rgb(0,0,100) solid;
+background: darkgreen;
+border: 10px rgb(20,20,20) solid;
 `
 
 const NavigationButtons = styled.div`
