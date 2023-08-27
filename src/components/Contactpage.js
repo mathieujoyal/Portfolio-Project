@@ -10,9 +10,9 @@ const Contactpage = () => {
             <Para>My phone number: <Span>438-880-0090</Span></Para>
 
             <Form className="neonboxlightintro">
-            <Label>Fullname: <Input></Input></Label>
-            <Label>Company: <Input></Input></Label>
-            <Label>Email: <Input type="email"></Input></Label>
+            <Label id="Fname">Fullname: <Input id="Fname"></Input></Label>
+            <Label>Company: <Input id="Fname"></Input></Label>
+            <Label>Email: <Input id="Fname" type="email"></Input></Label>
             <Label>Phonenumber: <Input></Input></Label>
             <Label>Comment: <Input className="commentsection"></Input></Label>
             <Button type="submit">Send Contact informations!</Button>
