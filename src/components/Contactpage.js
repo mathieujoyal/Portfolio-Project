@@ -23,7 +23,7 @@ const Contactpage = () => {
 }
 
 const Wholepage = styled.div`
-
+margin-bottom: 100px;
 `
 
 const H1 = styled.h1`
