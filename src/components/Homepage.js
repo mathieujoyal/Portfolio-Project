@@ -1,8 +1,11 @@
 import React from "react";
-import pics from "../Mathieu.png";
+import pics from "../Mathieu.jpg";
 import styled from "styled-components"
 
 const Homepage = () => {
+
+    
+
     return (
         <Wholepage className="Viewport">
             <Halfcolor></Halfcolor>
@@ -14,22 +17,22 @@ const Homepage = () => {
 }
 
 const Wholepage = styled.div`
-
+background-color: black;
 `
 
 const Halfcolor = styled.div`
-background-color: rgb(0,0,70);
+background-color: rgb(10,10,10);
 height: 250px;
 margin-bottom: -250px;
-box-shadow: 0px 0px 15px 5px black;
+box-shadow: 0px 0px 15px 5px darkgreen;
 `
 
 const Picture = styled.img`
 width: 200px;
-border:solid rgb(20,20,20) 5px;
+border:solid white 5px;
 border-radius: 100px;
 margin: 100px 0px;
-box-shadow: 0px 0px 10px 5px black;
+box-shadow: 0px 0px 10px 5px darkgreen;
 `
 
 const H1 = styled.h1`

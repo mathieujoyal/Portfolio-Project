@@ -27,8 +27,8 @@ const Header = () => {
 
 const HeaderStyled = styled.div`
 text-align: center;
-color:White;
-background-color: rgb(0,150,200);
+color: White;
+background-color: black;
 padding-top: 1px;
 &.titlebanner{
     animation-name: titlebanner;
@@ -36,13 +36,13 @@ padding-top: 1px;
     animation-iteration-count: 1;
 @keyframes titlebanner{
 0%{
-    background-color: rgb(0,0,0)
+    background-color: darkgreen
 }
 40%{
-    background-color: rgb(0,0,0)
+    background-color: darkgreen
 }
 100%{
-    background-color: rgb(0,150,200)
+    background-color: black
 }
 }
 }
@@ -52,12 +52,11 @@ const H1 = styled.h1`
 font-style: italic;
 padding: 10px 0px;
 text-align: center;
-background-color:rgb(0,0,250);
+background-color: rgb(20,20,20);
 width: 70%;
 margin-left: 15%;
 margin-right: 15%;
 border-radius: 10px;
-box-shadow: 0px 0px 15px 5px black;
 &.SlidingTitle{
     animation-name: slide-in;
     animation-duration: 2s;
@@ -78,12 +77,12 @@ box-shadow: 0px 0px 15px 5px black;
 `
 
 const NavigationButtons = styled.div`
-background-color: rgb(0,0,155);
+background-color: black;
 padding: 10px 20px;
 margin-top: 10px;
 text-decoration: none;
 margin: auto;
-box-shadow: 0px 0px 15px 5px black;
+box-shadow: 0px 0px 15px 5px darkgreen;
 position: relative;
 z-index: 10;
 @media(max-width:600px){
@@ -107,16 +106,15 @@ box-shadow: 0px 0px 15px 5px black;
 
 const LinkToPages = styled(Link)`
 color: white;
-background-color: rgb(80,80,80);
 padding: 10px 18px;
 margin-top: 10px;
 margin: 0px 10px;
-border: 2px solid black;
+border: 2px solid darkgreen;
 text-decoration: none;
 border-radius: 10px;
 width: 10%;
 &:hover{
-    background-color: rgb(0,0,100);
+    background-color: black;
 }
 `
 

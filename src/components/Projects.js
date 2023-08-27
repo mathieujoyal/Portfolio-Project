@@ -15,11 +15,14 @@ const Project = ({data}) => {
                 )
             })}
         </ListOfProjects>
-    </Wholepage>)
+    </Wholepage>
+
+
+        )
 }
 
 const Wholepage = styled.div`
-height: 250vh;
+height: 320vh;
 `
 
 const H1 = styled.h1`
@@ -34,7 +37,7 @@ margin: 10px 5%;
 const Projectdiv = styled.div`
     border: dashed;
     border-radius: 50px;
-    box-shadow: 0px 0px 20px 10px black;
+    box-shadow: 0px 0px 20px 10px darkgreen;
     margin: 50px 20%;
 `
 

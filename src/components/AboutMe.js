@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import secret from "../secretjujupage.png"
+import {Link} from "react-router-dom"
 
 const Aboutme = () => {
     return(
@@ -19,7 +21,11 @@ const Aboutme = () => {
                 Travel around the world
 
                 </ColoredP>
+
             </div>
+            <Link className="secretpage" aria-label="Show menu" to="/Jujupage">
+                <Img src={secret} alt="mobileBtn"/>
+                </Link>
         </Wholepage>
     )
 }
@@ -30,6 +36,14 @@ const Wholepage = styled.div`
 
 const ColoredP = styled.div`
 
+`
+
+const Img = styled.img`
+width: 10px;
+opacity: 10%;
+position: fixed;
+left: 0;
+top: 0;
 `
 
 const H1 = styled.h1`
