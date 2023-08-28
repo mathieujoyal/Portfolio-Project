@@ -9,9 +9,9 @@ const Homepage = () => {
     return (
         <Wholepage className="Viewport">
             <Halfcolor className="neonboxlightintro"></Halfcolor>
-            <Picture id="cool" className="neonboxlightintro" src={pics} alt="The only good picture of me"/>
-            <H1 className="neonlightintro">Mathieu Joyal, <Span>Junior front-end Developper</Span></H1>
-            <H2 className="neonlightintro">Welcome to my Portfolio showcase!</H2>
+            <Picture id="spin" src={pics} alt="The only good picture of me"/>
+            <H1 id="growing">Mathieu Joyal, <Span>Junior front-end Developper</Span></H1>
+            <H2 id="growing">Welcome to my Portfolio showcase!</H2>
         </Wholepage>
     )
 }
@@ -33,7 +33,7 @@ border:solid white 5px;
 border-radius: 100px;
 margin: 100px 0px;
 box-shadow: 0px 0px 15px 5px darkgreen;
-&#cool{
+&#spin{
 animation-name: spin;
 animation-duration: 1.2s;
 animation-iteration-count: 1;
@@ -55,11 +55,31 @@ animation-iteration-count: 1;
 `
 
 const H1 = styled.h1`
-
+&#growing{
+animation-name: growing;
+animation-duration: 4s;
+animation-iteration-count: 1;
+}
+@keyframes growing{
+0%{transform: scale(0%);}
+70%{transform: scale(0%);}
+90%{transform: scale(120%);}
+100%{transform: scale(100%);}
+}
 `
 
 const H2 = styled.h2`
-
+&#growing{
+animation-name: growing;
+animation-duration: 4s;
+animation-iteration-count: 1;
+}
+@keyframes growing{
+0%{transform: scale(0%);}
+70%{transform: scale(0%);}
+90%{transform: scale(120%);}
+100%{transform: scale(100%);}
+}
 `
 
 const Span = styled.span`

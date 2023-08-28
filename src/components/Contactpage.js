@@ -10,11 +10,11 @@ const Contactpage = () => {
             <Para>My phone number: <Span>438-880-0090</Span></Para>
 
             <Form className="neonboxlightintro">
-            <Label id="Fname">Fullname: <Input id="Fname"></Input></Label>
-            <Label>Company: <Input id="Fname"></Input></Label>
-            <Label>Email: <Input id="Fname" type="email"></Input></Label>
-            <Label>Phonenumber: <Input></Input></Label>
-            <Label>Comment: <Input className="commentsection"></Input></Label>
+            <Label>Fullname: <Input id="Fname"></Input></Label>
+            <Label>Company: <Input id="company"></Input></Label>
+            <Label>Email: <Input id="mail" type="email"></Input></Label>
+            <Label>Phonenumber: <Input id="phone"></Input></Label>
+            <Label>Comment: <Input id="extra" className="commentsection"></Input></Label>
             <Button type="submit">Send Contact informations!</Button>
             </Form>
 
@@ -27,12 +27,12 @@ margin-bottom: 100px;
 `
 
 const H1 = styled.h1`
-margin: auto;
+margin: 0px 30%;
 padding-top: 50px;
 `
 
 const Para = styled.p`
-
+font-size: 20px;
 `
 
 const Span = styled.span`
@@ -41,11 +41,11 @@ text-decoration: underline;
 `
 
 const Form = styled.form`
-    border: 10px black solid;
-    border-radius: 10px;
-    padding:5%;
-    margin: 0px 15%;
-    box-shadow: 0px 0px 15px 5px darkgreen;
+border: 10px rgb(15,15,15) solid;
+border-radius: 10px;
+padding:5%;
+margin: 0px 15%;
+box-shadow: 0px 0px 15px 5px darkgreen;
 `
 
 const Label = styled.label`

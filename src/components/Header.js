@@ -7,7 +7,9 @@ const Header = () => {
     return(
         <HeaderStyled className="titlebanner">
             <GlobalStyles />
+
             <H1 className="SlidingTitle">Mathieu Joyal's Portfolio</H1>
+
             <div>
             <NavigationButtons>
                 <LinkToPages className="Navbarbtn" to="/">Homepage</LinkToPages>
@@ -15,6 +17,7 @@ const Header = () => {
                 <LinkToPages className="Navbarbtn" to="/Projects">My Project</LinkToPages>
                 <LinkToPages className="Navbarbtn" to="/Contactpage">Contact me</LinkToPages>
             </NavigationButtons>
+
             <MobileDiv>
                 <Link className="Dropmenu" aria-label="Show menu" to="/NavigationPage">
                 <Navbutton src={Dropbtn} alt="mobileBtn"/>
