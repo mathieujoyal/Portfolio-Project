@@ -74,7 +74,9 @@ const GlobalStyles = createGlobalStyle`
         text-shadow: 5px 5px 5px darkgreen;
         &:hover{
             text-shadow: 0px 0px rgb(0,0,0);
-            color: white;
+            color: darkgreen;
+            transition: 0.5s ease-in;
+            cursor: default;
         }
     }
 
