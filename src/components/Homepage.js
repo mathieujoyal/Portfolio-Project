@@ -50,28 +50,6 @@ animation-iteration-count: 1;
     transform: scale(100%) rotate(360deg);
 }
 }
-
-&#neontest{
-    animation-name: neontest;
-animation-duration: 3s;
-animation-iteration-count: 1;
-}
-@keyframes neontest{
-            0%{opacity: 0%;}
-            3%{opacity: 40%;}
-            10%{opacity: 0%;}
-            12%{opacity: 40%;}
-            14%{opacity: 0%;}
-            15%{opacity: 40%;}
-            23%{opacity: 0%;}
-            26%{opacity: 40%;}
-            39%{opacity: 0%;}
-            43%{opacity: 40%;}
-            46%{opacity: 0%;}
-            62%{opacity: 40%;}
-            80%{opacity: 0%;}
-            100%{opacity: 100%;}
-}
 `
 
 const H1 = styled.h1`

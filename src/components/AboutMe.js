@@ -17,6 +17,10 @@ const Aboutme = () => {
             always makes me proud and motivates me to keep going and to keep improving what 
             i'm working on.
             </Para>
+            <Para>I'm a dedicated worker and i love challenging myself. I love working by myself or in a group
+                and i like to think of myself as a creative person with alot of ideas. I love helping others and 
+                i'm always trying to better myself in some way ( as much as possible of course).
+            </Para>
             <Para>(I made the site to look like neon lights a bit (hence the flashy green effect on the top text of the page)
                 because i love the old timey arcade look with neons everywhere.)</Para>
 
@@ -43,7 +47,7 @@ padding-bottom: 20px;
 `
 
 const Para = styled.p`
-margin: 20px 15%;
+margin: 40px 15%;
 box-shadow: 0px 0px 15px 5px darkgreen;
 border-radius: 10px;
 padding: 20px;
